@@ -1,0 +1,13 @@
+
+<cdk-virtual-scroll-viewport itemSize="100">
+  
+  <li *cdkVirtualFor="let pokemon of pokemons; let i = index" class="animated slideInRight">
+
+    <h2>{{pokemon.name}}</h2>
+    <!-- <img src="{{url + (i + 1) + '.png'}}" alt=""> -->
+    <img src="{{urlgif  + pokemon.name + '.gif'}}" alt="">
+    
+
+  </li>
+
+  </cdk-virtual-scroll-viewport>

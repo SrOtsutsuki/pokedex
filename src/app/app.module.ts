@@ -3,14 +3,27 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PokemonComponent } from './components/pokemon/pokemon.component';
+
+import {HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//Virtual scrolling
+
+import {ScrollingModule} from '@angular/cdk/scrolling';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
